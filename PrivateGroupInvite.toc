@@ -1,0 +1,5 @@
+## Interface: 11000
+## Title: PrivateGroupInvite
+## Notes: Will allow you to enable a privacy feature which will automatically refuse all group requests from anyone not in your guild/friend list.
+## SavedVariablesPerCharacter: PrivateGroupInvite_Enabled
+PrivateGroupInvite.xml

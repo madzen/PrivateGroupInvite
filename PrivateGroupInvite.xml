@@ -1,0 +1,23 @@
+<!--
+
+		PrivateGroupInvite: Will allow you to enable a privacy feature which will automatically refuse 
+				    all group requests from anyone not in your guild/friend list.
+		
+		Copyright (C) 2006-2012 Madzen
+
+-->
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="PrivateGroupInvite.lua"/>
+	<Frame name="PrivateGroupInviteFrame" toplevel="true" frameStrata="LOW" enableMouse="true" parent="UIParent">
+		<Scripts>
+			<OnLoad>
+				PrivateGroupInvite_OnLoad();
+			</OnLoad>
+			<OnEvent>
+				PrivateGroupInvite_OnEvent(event);
+			</OnEvent>
+		</Scripts>
+	</Frame>
+	<GameTooltip name="PrivateGroupInviteTooltip" inherits="GameTooltipTemplate" parent="UIParent" hidden="true"/>
+</Ui>
